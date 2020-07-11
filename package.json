@@ -1,0 +1,19 @@
+{
+  "name": "findagame",
+  "version": "1.0.0",
+  "description": "Find A Game Through Steam Or Other Connected Apis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scarletvidler/findAGame.git"
+  },
+  "author": "Scarlet Vidler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scarletvidler/findAGame/issues"
+  },
+  "homepage": "https://github.com/scarletvidler/findAGame#readme"
+}
