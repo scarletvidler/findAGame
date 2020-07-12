@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/scarletvidler/findAGame/issues"
   },
-  "homepage": "https://github.com/scarletvidler/findAGame#readme"
+  "homepage": "https://github.com/scarletvidler/findAGame#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
