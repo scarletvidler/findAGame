@@ -19,8 +19,8 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
         script: | 
-          sudo mkdir /home/${{ secrets.name }}
-          sudo chrown -R ${{ secrets.USERNAME }}:${{ secrets.USERNAME }} /home/${{ secrets.name }} 
+          sudo mkdir -p /home/${{ secrets.name }}
+          sudo chown -R ${{ secrets.USERNAME }}:${{ secrets.USERNAME }} /home/${{ secrets.name }} 
 
 
     - name: Copy file via scp
