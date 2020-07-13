@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Executing remote  command
+    - name: Make Temp Directory For App
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -34,3 +34,12 @@ jobs:
         source: "."
         target: "/home/${{ secrets.name }}"
 
+    - name: Create Docker
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+        script: | 
+          sudo bash /home/${{ secrets.name }}/rush.sh
