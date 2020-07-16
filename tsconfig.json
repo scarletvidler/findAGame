@@ -1,9 +1,15 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "target": "es6",
-        "module": "commonjs",
-        "sourceMap": false,
-        "typeRoots": ["./node_modules/@types", "./typings"]
-    }
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true
+  }
 }

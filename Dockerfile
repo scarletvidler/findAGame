@@ -10,8 +10,9 @@ WORKDIR ${WORKDIR}
 #MAKEAPP
 COPY . ${WORKDIR}
 RUN npm install
+RUN npm i -g @nestjs/cli
 RUN npm i -g typescript
 RUN tsc -p .
 
 EXPOSE 3000
-CMD [ "node", "dist/index.js", "--env=prod" ]
+CMD [ "npm", "run start", "--env=prod" ]
